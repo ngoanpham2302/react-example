@@ -1,15 +1,14 @@
 import React from "react";
-import "./User.css";
 
 function User(props) {
   return (
-    <div className="user">
+    <div className="text-center">
       <h2 style={{ backgroundColor: props.theColor }}>
         Hello, {props.firstName}
       </h2>
 
       <h2> Welcome To {props.bootcampName} </h2>
-      <img src={props.image} width="350" height="350" />
+      <img src={props.image} width="350" height="350" alt="user-avatar" />
     </div>
   );
 }

@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Navbar from "./components/Navbar";
 import User from "./components/User";
 
+import "./App.css";
+
 class App extends Component {
   state = {
     userA: {
@@ -40,9 +42,12 @@ class App extends Component {
       <div className="App">
         <Navbar />
 
-        <h1>React - state</h1>
-        <p>Count is: {this.state.clickCount}</p>
-        <button onClick={this.clickHandler}> Click me </button>
+        <h1 className="text-center">React - state</h1>
+        <p className="text-center text-bold">Count is: {this.state.clickCount}</p>
+        <button className="text-center" onClick={this.clickHandler}>
+          {" "}
+          Click me{" "}
+        </button>
 
         <User
           theColor={this.state.backColor}
